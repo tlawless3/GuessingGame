@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/game.js"></script>
+
+  </head>
+  <body>
+
+      <div id='app'class='center container'>
+
+        <div id='headers' class='center'>
+          <!-- Title and subtitles! -->
+          <h1 id="title">Guessing Game</h1>
+          <h2 id="subtitle">Guess a number between 1-100</h2>
+        </div>
+
+        <div id='main' class='center'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+            <input id='playerInput' class='center' placeholder="#" maxlength='3' autofocus=autofocus></input>
+            <button id='submitButton' class='btn btn-success'>guess</button>
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <ul id='guessList'>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button id='resetButton' class='btn btn-default' value='reset'>Reset</button>
+            <button id='hintButton' class='btn btn-default' value='hint'>Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id='footer' class='center'>
+       <div class='row'>
+         <div class='col-sm-4'>
+           <img src='../fa-logo@2x.png'></img>
+         </div>
+
+         <div class='col-sm-4'>
+           <h4>Project by Thomas Lawless</h4>
+         </div>
+
+         <div class='col-sm-4'>
+           <img src='../grace_hopper_academy.png'></img>
+         </div>
+
+
+       </div>
+     </div>
+
+  </body>
+</html>
